@@ -16,13 +16,13 @@ class BrowserWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Dewsverse Private Browser")
-        self.resize(1134, 702)  # Set the window size
+        self.resize(1134, 702)
         # Set the window icon
         self.setWindowIcon(QIcon("./media/logo.jpeg"))
         # Create a custom web engine profile without history tracking
         self.profile = NoHistoryWebEngineProfile()
         def add_new_tab():
-            self.add_tab("https://duckduckgo.com/")
+            self.add_tab("https://superurl.pythonanywhere.com/0c31Yx")
 
         # Create a tab widget to hold multiple tabs
         self.tab_widget = QTabWidget()
@@ -31,7 +31,7 @@ class BrowserWindow(QMainWindow):
         self.tab_widget.currentChanged.connect(self.switch_tab)
         self.tab_widget.tabBar().setTabButton(0, QTabBar.RightSide, QToolButton(self.tab_widget.tabBar(), text="+", clicked=add_new_tab))
 
-        self.add_tab("https://duckduckgo.com/")
+        self.add_tab("https://superurl.pythonanywhere.com/0c31Yx")
 
         # Create the address bar
         # self.address_bar = QLineEdit()
@@ -47,7 +47,7 @@ class BrowserWindow(QMainWindow):
         central_widget.setLayout(layout)
         self.setCentralWidget(central_widget)
 
-    def add_tab(self, url="https://duckduckgo.com/"):
+    def add_tab(self, url="https://superurl.pythonanywhere.com/0c31Yx"):
         # Create a new web view for the tab
         web_view = QWebEngineView()
         web_view.setPage(QWebEnginePage(self.profile, web_view))
