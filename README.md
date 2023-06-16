@@ -11,6 +11,7 @@ Dewsverse Private Browser is a side project developed with Python. It aims to pr
 - No history data: Your browsing history is not stored locally or shared with any servers.
 - DuckDuckGo search engine: The browser utilizes the DuckDuckGo search engine by default, enhancing privacy and preventing tracking.
 - Lightweight and efficient: The codebase is designed to be efficient, providing a smooth browsing experience while using minimal system resources.
+![](./media/Screenshot%202023-06-16%20213802.png)
 
 ## Contributing
 
